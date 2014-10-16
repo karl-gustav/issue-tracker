@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.red {
+  background-color:red;
+}
+
+.yellow {
+  background-color:yellow;
+}
+
+.blue {
+  background-color:blue;
+}
+
+.black {
+  background-color:black;
+}

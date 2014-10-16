@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="STYLESHEET" href="/css/style.css" type="text/css">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+<title>Backend Manual</title>
+</head>
+<body>
+<div class="content">
+<h1>Rest backend usermanual</h1>
+<br />
+<div id="messages"></div>
+<br />
+<h3>Objects:</h3>
+<pre>
+Project:
+- Required fields: name
+- Optional fields: N/A
+
+Issue:
+- Required fields: summary
+- Optional fields: text, closed(true/false)
+
+Comment:
+- Required fields: text
+- Optional fields: N/A
+
+</pre>
+<h3>Urls:</h3>
+<pre>
+get all projects:
+	/1/projects
+	
+get one project:
+	/1/projects/&lt;project-key&gt;
+	
+get all project issues:
+	/1/projects/&lt;project-key&gt;/issues
+	
+get one project issue
+	/1/projects/&lt;project-key&gt;/issues/&lt;issue-key&gt;
+	
+get all issue comments:
+	/1/projects/&lt;project-key&gt;/issues/&lt;issue-key&gt;/comments
+	
+get one issue comment:
+	/1/projects/&lt;project-key&gt;/issues/&lt;issue-key&gt;/comments/&lt;comment-key&gt;
+	
+</pre>
+<h3>Methods:</h3>
+<pre>
+Use rest to manipulate the objects:
+- put	 (create)
+- post	 (update)
+- get	 (get)
+- delete (delete)
+
+</pre>
+<input type="button" id="createProject" value="Create project"/>
+</div>
+<script type="text/javascript" src='//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+<script type="text/javascript" src="/scripts/jquery.rest_extension.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>
